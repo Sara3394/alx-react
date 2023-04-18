@@ -11,9 +11,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
   "dependencies": {
     "jquery": "^3.6.4",
     "lodash": "^4.17.21",
-    "webpack": "^5.79.0"
   }
 }
