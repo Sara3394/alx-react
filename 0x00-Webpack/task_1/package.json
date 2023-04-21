@@ -13,19 +13,12 @@
     "webpack-cli": "^5.0.2"
   },
   "scripts": {
-<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> ad7c5cbbabb741894bd6b0828a212120ebfe39aa
     "dev": "webpack --mode development",
     "build": "webpack"
   },
   "keywords": [],
   "author": "",
-<<<<<<< HEAD
-  "license": "ISC"
-=======
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.79.0",
@@ -35,5 +28,4 @@
     "jquery": "^3.6.4",
     "lodash": "^4.17.21",
   }
->>>>>>> ad7c5cbbabb741894bd6b0828a212120ebfe39aa
 }
