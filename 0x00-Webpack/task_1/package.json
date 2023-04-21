@@ -2,11 +2,7 @@
   "name": "task_1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "jQuery": "^1.7.4",
-    "jquery": "^3.6.4",
-    "lodash": "^4.17.21"
+  "main": "index.js"
   },
   "devDependencies": {
     "webpack": "^5.80.0",
@@ -18,7 +14,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sara",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.79.0",
@@ -26,6 +22,6 @@
   },
   "dependencies": {
     "jquery": "^3.6.4",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
   }
 }
