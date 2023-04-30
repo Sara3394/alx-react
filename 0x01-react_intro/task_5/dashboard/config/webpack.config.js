@@ -23,13 +23,13 @@ module.exports = {
         use: {
           loader: 'image-webpack-loader'
         }
+      },
+      {
+        test: /\.(jsx|js)$/,
+	use: {
+	   loader: 'babel-loader'
       }
-	    {
-		    test: /\.(jsx|js)$/,
-			    use: {
-				    loader: 'babel-loader'
-			    }
-	    }
+	}
     ]
   }
 };
