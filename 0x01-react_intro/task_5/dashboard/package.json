@@ -4,13 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --config config/webpack.config.js --mode development --open --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.7.3",
+    "image-webpack-loader": "^8.1.0",
+    "source-map-loader": "^4.0.1",
+    "style-loader": "^3.3.2",
     "webpack": "^5.81.0",
-    "webpack-cli": "^5.0.2"
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
   }
 }
