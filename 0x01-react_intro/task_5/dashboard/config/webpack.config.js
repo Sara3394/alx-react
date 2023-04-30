@@ -24,6 +24,12 @@ module.exports = {
           loader: 'image-webpack-loader'
         }
       }
+	    {
+		    test: /\.(jsx|js)$/,
+			    use: {
+				    loader: 'babel-loader'
+			    }
+	    }
     ]
   }
 };
