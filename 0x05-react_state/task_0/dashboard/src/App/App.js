@@ -59,36 +59,29 @@ class App extends React.Component {
     });
   }
 
-  render() {
+  render () {
     return (
-      <React.Fragment>
+      <>
+        <Notifications
+          listNotifications={this.state.listNotifications}
+          displayDrawer={this.state.displayDrawer}
+          handleDisplayDrawer={this.handleDisplayDrawer} handleHideDrawer={this.handleHideDrawer}
+        />
         <div className={css(styles.App)}>
-          <div className="heading-section">
-            <Notifications
-              listNotifications={this.listNotifications}
-              displayDrawer={this.state.displayDrawer}
-              handleDisplayDrawer={this.handleDisplayDrawer}
-              handleHideDrawer={this.handleHideDrawer}
-            <Header />
-          </div>
-          {this.props.isLoggedIn ? (
-            <BodySectionWithMarginBottom title="Course list">
-              <CourseList listCourses={this.listCourses} />
-            </BodySectionWithMarginBottom>
-          ) : (
-            <BodySectionWithMarginBottom title="Log in to continue">
-              <Login />
-            </BodySectionWithMarginBottom>
-          )}
-          <BodySection title="News from the school">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at tempora odio, necessitatibus repudiandae reiciendis cum nemo sed asperiores ut molestiae eaque aliquam illo ipsa
-              iste vero dolor voluptates.
-            </p>
-          </BodySection>
+          <Header />
+          <main className={css(styles.Main)}>
+            {this.props.isLoggedIn
+              ? <BodySectionWithMarginBottom title='Course list'><CourseList listCourses={this.state.listCourses} /></BodySectionWithMarginBottom>
+              : <BodySectionWithMarginBottom title='Log in to continue'><Login /></BodySectionWithMarginBottom>}
+            <BodySection title='News from the School'>
+              <p>
+                A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba. The farmers will make more money. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything.
+              </p>
+            </BodySection>
+          </main>
           <Footer />
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }
