@@ -7,7 +7,6 @@ import Notifications from "../Notifications/Notifications";
 import { StyleSheet, css } from "aphrodite";
 import PropTypes from "prop-types";
 import { getLatestNotification } from "../utils/utils";
-import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
 import BodySection from "../BodySection/BodySection";
 
 listNotifications = [
@@ -42,7 +41,7 @@ class App extends React.Component {
   }
 
   handlePress(event) {
-    if (event.ctrlKey && event.key === 'h') {
+    if (event.ctrlKey && event.key === "h") {
       alert("Logging you out");
       this.props.logOut();
     }
@@ -50,13 +49,13 @@ class App extends React.Component {
 
   handleDisplayDrawer() {
     this.setState({
-      displayDrawer: true 
+      displayDrawer: true
     });
   }
 
   handleHideDrawer() {
-    this.setState({ 
-      displayDrawer: false 
+    this.setState({
+      displayDrawer: false
     });
   }
 
@@ -70,7 +69,6 @@ class App extends React.Component {
               displayDrawer={this.state.displayDrawer}
               handleDisplayDrawer={this.handleDisplayDrawer}
               handleHideDrawer={this.handleHideDrawer}
-            />
             <Header />
           </div>
           {this.props.isLoggedIn ? (
