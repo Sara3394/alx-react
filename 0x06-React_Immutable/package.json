@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "immutable": "^4.0.0-rc.12"
+  },
+  {
+  "type": "module"
   }
 }
