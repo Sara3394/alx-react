@@ -1,4 +1,4 @@
-import { Seq } from 'immutable';
+import immutable from 'immutable';
 //uses fromJS from the Immutable.js library
 
 const firstLetterCap = (str) => str.charAt(0).toUpperCase() + str.slice(1);
