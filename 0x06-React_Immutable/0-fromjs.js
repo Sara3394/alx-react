@@ -1,6 +1,5 @@
-import { fromJS } from "immutable";
-//uses fromJS from the Immutable.js library
+import { fromJS } from 'immutable';
 
-export default function getImmutableObject(object) {
-return fromJS(object)
+export default function getImmutableObject (object) {
+  return fromJS(object);
 }
