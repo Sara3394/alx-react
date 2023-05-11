@@ -1,5 +1,5 @@
 import { Map } from "immutable";
-//uses fromJS from the Immutable.js library
+//uses Map from the Immutable.js library
 
 export const map = Map({
   1: 'Liam',
