@@ -1,4 +1,4 @@
-import { fromJS } from "immutable";
+import fromJS from "immutable";
 
 //uses fromJS from the Immutable.js library
 
