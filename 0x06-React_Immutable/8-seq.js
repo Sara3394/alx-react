@@ -14,3 +14,6 @@ export default function printBestStudents(objects) {
         lastName: firstLetterCap(lastName),
       };
     });
+  
+  bestStudents.forEach((student) => console.log(student));
+}
