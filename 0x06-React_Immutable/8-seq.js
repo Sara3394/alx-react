@@ -3,6 +3,8 @@ import { Seq } from 'immutable';
 
 const firstLetterCap = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
+const { Seq } = immutable;
+
 export default function printBestStudents(objects) {
   const bestStudents = Seq(objects)
     .filter((student) => student.score > 70)
