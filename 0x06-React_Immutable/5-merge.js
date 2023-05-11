@@ -1,5 +1,4 @@
 import { List, Map } from 'immutable';
-//uses List and Map from the Immutable.js library
 
 export const concatElements = (page1, page2) => List(page1).concat(page2);
 
