@@ -1,5 +1,4 @@
 import { Seq } from 'immutable';
-//uses Seq from the Immutable.js library
 
 const printBestStudents = (grades) => {
   const seq = Seq(grades);
