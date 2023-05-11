@@ -1,7 +1,7 @@
 import { Seq } from 'immutable';
 //uses fromJS from the Immutable.js library
 
-const firstLetterCap = (str) => str.charAt(0).toUpperCase() + str.slice(0, 1);
+const firstLetterCap = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 export default function printBestStudents(objects) {
   const bestStudents = Seq(objects)
