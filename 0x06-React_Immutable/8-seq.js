@@ -10,7 +10,7 @@ export default function printBestStudents(objects) {
       const { firstName, lastName } = student;
       return {
         ...student,
-        firstName: makeUppercase(firstName),
-        lastName: makeUppercase(lastName),
+        firstName: firstLetterCap(firstName),
+        lastName: firstLetterCap(lastName),
       };
     });
