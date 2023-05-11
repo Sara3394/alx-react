@@ -1,7 +1,6 @@
-import { List } from 'immutable';
+import { fromJS } from "immutable";
+//uses fromJS from the Immutable.js library
 
 export const getListObject = (array) => fromJS(array);
 
-export function addElementToList(list, element) {
-    return list.push(element);
-  }
+export const addElementToList = (list, element) => list.push(element);
