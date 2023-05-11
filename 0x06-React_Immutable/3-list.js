@@ -1,4 +1,5 @@
 import { List } from 'immutable';
+
 //uses List from the Immutable.js library
 
 export function getListObject(array) {
