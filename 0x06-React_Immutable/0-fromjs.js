@@ -1,4 +1,4 @@
-import { fromJS } from "./immutable.js";
+import { fromJS } from "immutable";
 //uses fromJS from the Immutable.js library
 
 const getImmutableObject = (object) => fromJS(object);
