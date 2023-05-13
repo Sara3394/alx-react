@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     all: ["./modules/header/header.js", "./modules/body/body.js", "./modules/footer/footer.js"],
     /*header: './modules/header/header.js',
