@@ -16,8 +16,8 @@ module.exports = {
     maxAssetSize: 512000
 },
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "bundle.js",
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'public')
   },
   devtool: 'inline-source-map',
   devServer: {
