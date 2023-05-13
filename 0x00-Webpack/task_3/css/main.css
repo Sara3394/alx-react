@@ -1,0 +1,11 @@
+#logo {
+	width: 200px;
+	height: 200px;
+    background-size: 200px 200px;
+    background: url('../assets/Holber_logo.jpg');
+}
+
+#count {
+	display: inline;
+	font-weight: bold;
+}
