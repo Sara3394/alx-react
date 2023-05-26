@@ -9,6 +9,7 @@
     "build": "webpack",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "dev": "webpack serve --open"
+    "test-watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
